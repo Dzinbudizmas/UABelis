@@ -168,7 +168,7 @@ footer {
     border: none;
     box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
     margin: 0 !important;
-    padding: 34px 0;
+    padding: 24px 0;
 }
 
 .navbar-default .navbar-brand {
@@ -397,7 +397,7 @@ footer {
 
 
 /*---------------------------------------
-    Galllery section
+    Gallery section
 -----------------------------------------*/
 
 #gallery .gallery-thumb {
