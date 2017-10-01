@@ -54,6 +54,7 @@
             $comment = validate_input($_POST["comment"]);
         }
 
+        // insert when data is valid
         if ($nameIsValid && $emailIsValid && $phoneIsValid) {
             createGuest($name, $email, $phone, $comment);
         }
@@ -81,17 +82,9 @@
            echo "ERROR: " . mysqli_error(getConnection());
        }
        else {
-           header('Location:'.$_SERVER['PHP_SELF']);
-           //$_POST = array();
+           $redirectTo = 'http://'.$_SERVER['HTTP_HOST'].'/success.php';
+           header('Location: '.$redirectTo);
        }
    }
 
    ?>
-<!--
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-     $name = validate_input($_POST["name"]);
-     $email = validate_input($_POST["email"]);
-     $phone = validate_input($_POST["phone"]);
-     $comment = validate_input($_POST["comment"]);
-  }
- -->
