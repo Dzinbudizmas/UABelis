@@ -65,18 +65,11 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1s">
+<!--              <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1s">-->
+<!---->
+<!--              </div>-->
 
-              </div>
-
-              <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
-                <h2>Kauno adresas</h2>
-                <p>Laisvės al. 223-332</p>
-                <p>+370 611 111 11</p>
-                <p>labas@uabelis.com</p>
-              </div>
-
-              <div class="clearfix col-md-12 col-sm-12">
+             <div class="clearfix col-md-12 col-sm-12">
                 <hr>
               </div>
 
@@ -84,20 +77,18 @@
               <?php include "validate.php"; ?>
 
               <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="1s">
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" novalidate>
                   <div class="col-md-4 col-sm-4">
                     <input type="text" class="form-control" name="name" placeholder="Vardas" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''  ?>"  />
-                    <span><?php echo $nameErr;?></span>
-                    <!-- required= " " oninvalid="this.setCustomValidity('Nurodykite vardą')" oninput="setCustomValidity('')"> -->
+                    <span class="text-danger"><?php echo $nameErr;?></span>
                   </div>
                   <div class="col-md-4 col-sm-4">
                     <input type="email" class="form-control" name="email" placeholder="El. paštas" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''  ?>" >
-                    <span><?php echo $emailErr;?></span>
+                    <span class="text-danger"><?php echo $emailErr;?></span>
                   </div>
                   <div class="col-md-4 col-sm-4">
                     <input type="tel" class="form-control" name="phone" placeholder="Telefonas" value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''  ?>"  />
-                    <!-- required= " " oninvalid="this.setCustomValidity('Nurodykite telefoną')" oninput="setCustomValidity('')"> -->
-                    <span><?php echo $phoneErr;?></span>
+                    <span class="text-danger"><?php echo $phoneErr;?></span>
                   </div>
                   <div class="col-md-12 col-sm-12">
                     <textarea   class="form-control"
@@ -119,19 +110,6 @@
           </div>
         </section>
 
-
-        <?php
-    echo "<h2>Your Input:</h2>";
-    echo $name;
-    echo "<br>";
-    echo $email;
-    echo "<br>";
-    echo $phone;
-    echo "<br>";
-    echo $comment;
-    echo "<br>";
-
-    ?>
 
 <!-- Footer section -->
 
