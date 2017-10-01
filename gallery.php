@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="lt">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-
-        <title>UABėlio paslaugėlės</title>
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-
-        <link rel="stylesheet" href="css/style.css">
-
-        <!-- Google web font  -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    </head>
+<?php
+    require "header.php";
+ ?>
     <body>
         <!-- Preloader section -->
 
@@ -32,7 +12,7 @@
 
         <!-- Navigation section  -->
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
 
             <div class="navbar-header">
@@ -41,15 +21,15 @@
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
               </button>
-              <a href="index.html" class="navbar-brand"><strong>UAB</strong>ėlis</a>
+              <a href="index.php" class="navbar-brand"><strong>UAB</strong>ėlis</a>
             </div>
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Pradžia</a></li>
-                <li><a href="about.html">Apie mus</a></li>
-                <li class="active"><a href="gallery.html">Galerija</a></li>
-                <li><a href="services.html">Paslaugos</a></li>
-                <li><a href="contact.html">Kontaktai</a></li>
+                <li><a href="index.php">Pradžia</a></li>
+                <li><a href="about.php">Apie mus</a></li>
+                <li class="active"><a href="gallery.php">Galerija</a></li>
+                <li><a href="services.php">Paslaugos</a></li>
+                <li><a href="contact.php">Kontaktai</a></li>
               </ul>
             </div>
 
@@ -86,7 +66,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img1.jpg" class="image-popup">
-                    <img src="images/gallery-img1.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img1.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -94,7 +74,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img2.jpg" class="image-popup">
-                    <img src="images/gallery-img2.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img2.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -102,7 +82,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img3.jpg" class="image-popup">
-                    <img src="images/gallery-img3.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img3.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -110,7 +90,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img4.jpg" class="image-popup">
-                    <img src="images/gallery-img4.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img4.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -118,7 +98,7 @@
               <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img5.jpg" class="image-popup">
-                    <img src="images/gallery-img5.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img5.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -126,7 +106,7 @@
               <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img6.jpg" class="image-popup">
-                    <img src="images/gallery-img6.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img6.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -134,7 +114,7 @@
               <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img7.jpg" class="image-popup">
-                    <img src="images/gallery-img7.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img7.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -142,7 +122,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img8.jpg" class="image-popup">
-                    <img src="images/gallery-img8.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img8.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -150,7 +130,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img9.jpg" class="image-popup">
-                    <img src="images/gallery-img9.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img9.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -158,7 +138,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img10.jpg" class="image-popup">
-                    <img src="images/gallery-img10.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img10.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -166,7 +146,7 @@
               <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="gallery-thumb">
                   <a href="images/gallery-img11.jpg" class="image-popup">
-                    <img src="images/gallery-img11.jpg" class="img-responsive" alt="Gallery">
+                    <img src="images/gallery-img11.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>
@@ -177,17 +157,9 @@
 
         <!-- Footer section -->
 
-        <footer>
-        	<div class="container">
-        		<div class="row">
-
-        			<div class="col-md-12 col-sm-12">
-        				<p class="wow fadeInUp"  data-wow-delay="2s" >© 2017 UABėlis. Dizainas: Dzinbudizmas & Co</p>
-        			</div>
-
-        		</div>
-        	</div>
-        </footer>
+        <?php
+            include "footer.php";
+         ?>
 
         <!-- Back top -->
         <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>

@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="lt">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
+<?php
+    require "header.php";
+ ?>
 
-        <title>UABėlio paslaugėlės</title>
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-
-        <link rel="stylesheet" href="css/style.css">
-
-        	<!-- Google web font  -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    </head>
     <body>
 
         <!-- Preloader section -->
@@ -33,7 +14,7 @@
 
         <!-- Navigation section  -->
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
 
             <div class="navbar-header">
@@ -42,15 +23,15 @@
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
               </button>
-              <a href="index.html" class="navbar-brand"><strong>UAB</strong>ėlis</a>
+              <a href="index.php" class="navbar-brand"><strong>UAB</strong>ėlis</a>
             </div>
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Pradžia</a></li>
-                <li><a href="about.html">Apie mus</a></li>
-                <li><a href="gallery.html">Galerija</a></li>
-                <li><a href="services.html">Paslaugos</a></li>
-                <li class="active"><a href="contact.html">Kontaktai</a></li>
+                <li><a href="index.php">Pradžia</a></li>
+                <li><a href="about.php">Apie mus</a></li>
+                <li><a href="gallery.php">Galerija</a></li>
+                <li><a href="services.php">Paslaugos</a></li>
+                <li class="active"><a href="contact.php">Kontaktai</a></li>
               </ul>
             </div>
 
@@ -88,63 +69,85 @@
 
               </div>
 
-              <!-- <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
+              <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
                 <h2>Kauno adresas</h2>
                 <p>Laisvės al. 223-332</p>
                 <p>+370 611 111 11</p>
-                <p>labas@yuabelis.com</p>
-              </div> -->
+                <p>labas@uabelis.com</p>
+              </div>
 
               <div class="clearfix col-md-12 col-sm-12">
                 <hr>
               </div>
 
+
+              <?php include "validate.php"; ?>
+
               <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="1s">
-                <form action="#" method="post">
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                   <div class="col-md-4 col-sm-4">
-                    <input type="text" class="form-control" placeholder="Vardas">
+                    <input type="text" class="form-control" name="name" placeholder="Vardas" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''  ?>"  />
+                    <span><?php echo $nameErr;?></span>
+                    <!-- required= " " oninvalid="this.setCustomValidity('Nurodykite vardą')" oninput="setCustomValidity('')"> -->
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <input type="email" class="form-control" placeholder="El. paštas">
+                    <input type="email" class="form-control" name="email" placeholder="El. paštas" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''  ?>" >
+                    <span><?php echo $emailErr;?></span>
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <input type="tel" class="form-control" placeholder="Telefonas">
+                    <input type="tel" class="form-control" name="phone" placeholder="Telefonas" value="<?php echo isset($_POST['phone']) ? $_POST['phone'] : ''  ?>"  />
+                    <!-- required= " " oninvalid="this.setCustomValidity('Nurodykite telefoną')" oninput="setCustomValidity('')"> -->
+                    <span><?php echo $phoneErr;?></span>
                   </div>
                   <div class="col-md-12 col-sm-12">
-                    <textarea class="form-control" rows="4" placeholder="Žinutės tekstas"></textarea>
+                    <textarea   class="form-control"
+                                rows="4"
+                                name="comment"
+                                placeholder="Žinutės tekstas"
+                                value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''  ?>"></textarea>
                   </div>
                   <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
                     <input type="submit" class="form-control" value="Išsiųsti">
+
+
                   </div>
                 </form>
               </div>
+
 
             </div>
           </div>
         </section>
 
+
+        <?php
+    echo "<h2>Your Input:</h2>";
+    echo $name;
+    echo "<br>";
+    echo $email;
+    echo "<br>";
+    echo $phone;
+    echo "<br>";
+    echo $comment;
+    echo "<br>";
+
+    ?>
+
 <!-- Footer section -->
 
-<footer>
-    <div class="container">
-        <div class="row">
+<?php
+    include "footer.php";
+ ?>
 
-            <div class="col-md-12 col-sm-12">
-                <p class="wow fadeInUp"  data-wow-delay="2s" >© 2017 UABėlis. Dizainas: Dzinbudizmas & Co</p>
-            </div>
 
-        </div>
-    </div>
-</footer>
+     <!-- Back top -->
+     <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
-<!-- Back top -->
-<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+     <!-- Javascript  -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/custom.js"></script>
 
-<!-- Javascript  -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
-
-</body>
+    </body>
 </html>

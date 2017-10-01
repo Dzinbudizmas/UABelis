@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="lt">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
+<?php
 
-        <title>UABėlio paslaugėlės</title>
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-         <link rel="stylesheet" href="css/flexslider.css">
-
-        <link rel="stylesheet" href="css/style.css">
-
-        	<!-- Google web font  -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    </head>
+    require "header.php";
+ ?>
     <body>
 
         <!-- Preloader section -->
@@ -33,7 +14,7 @@
 
         <!-- Navigation section  -->
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
 
             <div class="navbar-header">
@@ -42,15 +23,15 @@
                 <span class="icon icon-bar"></span>
                 <span class="icon icon-bar"></span>
               </button>
-              <a href="index.html" class="navbar-brand"><strong>UAB</strong>ėlis</a>
+              <a href="index.php" class="navbar-brand"><strong>UAB</strong>ėlis</a>
             </div>
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Pradžia</a></li>
-                <li class="active"><a href="about.html">Apie mus</a></li>
-                <li><a href="gallery.html">Galerija</a></li>
-                <li><a href="services.html">Paslaugos</a></li>
-                <li><a href="contact.html">Kontaktai</a></li>
+                <li><a href="index.php">Pradžia</a></li>
+                <li class="active"><a href="about.php">Apie mus</a></li>
+                <li><a href="gallery.php">Galerija</a></li>
+                <li><a href="services.php">Paslaugos</a></li>
+                <li><a href="contact.php">Kontaktai</a></li>
               </ul>
             </div>
 
@@ -81,7 +62,7 @@
        <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
         <div class="section-title">
           <h3>apie mus</h3>
-          <h1>Mes & Mūsų draugai</h1>
+          <h1>Mes ir draugai</h1>
         </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem autem officia, tempora laudantium enim! Vitae saepe error, facilis beatae natus?</p>
       </div>
@@ -130,8 +111,8 @@
               <div class="about-overlay">
                 <div class="about-item">
                     <ul class="social-icon">
-                      <li><a href="#" class="fa fa-facebook"></a></li>
-                      <li><a href="#" class="fa fa-linkedin"></a></li>
+                      <li><a href="https://www.facebook.com/Uabelis/" class="fa fa-facebook"></a></li>
+                      <li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
                    </ul>
                 </div>
               </div>
@@ -146,8 +127,8 @@
               <div class="about-overlay">
                 <div class="about-item">
                     <ul class="social-icon">
-                      <li><a href="#" class="fa fa-facebook"></a></li>
-                      <li><a href="#" class="fa fa-linkedin"></a></li>
+                      <li><a href="https://www.facebook.com/Uabelis/" class="fa fa-facebook"></a></li>
+                      <li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
                    </ul>
                 </div>
               </div>
@@ -162,8 +143,8 @@
               <div class="about-overlay">
                 <div class="about-item">
                     <ul class="social-icon">
-                      <li><a href="#" class="fa fa-facebook"></a></li>
-                      <li><a href="#" class="fa fa-linkedin"></a></li>
+                      <li><a href="https://www.facebook.com/Uabelis/" class="fa fa-facebook"></a></li>
+                      <li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
                     </ul>
                 </div>
               </div>
@@ -178,28 +159,20 @@
 
 <!-- Footer section -->
 
-<footer>
-	<div class="container">
-		<div class="row">
+<?php
+    include "footer.php";
+ ?>
 
-			<div class="col-md-12 col-sm-12">
-				<p class="wow fadeInUp"  data-wow-delay="1s" >© 2017 UABėlis. Dizainas: Dzinbudizmas & Co</p>
-			</div>
+ <!-- Back top -->
+  <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
-		</div>
-	</div>
-</footer>
+  <!-- Javascript  -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/counter-options.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
 
-    <!-- Back top -->
-    <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-    <!-- Javascript  -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/counter-options.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    </body>
+  </body>
 </html>
