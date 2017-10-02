@@ -4,13 +4,11 @@
 
     <body>
 
-        <!-- Preloader section -->
+        <!-- preloader section -->
 
         <div class="preloader">
              <div class="sk-spinner sk-spinner-pulse"></div>
         </div>
-
-
 
         <!-- Navigation section  -->
 
@@ -38,7 +36,6 @@
           </div>
         </div>
 
-
         <!-- Home section -->
 
         <section id="home" class="main-contact">
@@ -51,32 +48,26 @@
           </div>
         </section>
 
-
         <!-- Contact section -->
 
         <section id="contact">
           <div class="container">
             <div class="row">
 
-               <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.8s">
+               <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="section-title text-center">
                   <h1>Kontaktai</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae itaque, explicabo eligendi blanditiis? Excepturi culpa provident repudiandae eaque praesentium sapiente amet velit dolores ipsum! Assumenda quo eum eaque itaque omnis? Culpa ullam veniam ipsum earum velit doloremque aut eaque nobis laudantium, voluptatum praesentium cumque repudiandae, vitae! Neque eos, quod blanditiis?</p>
                 </div>
               </div>
 
-<!--              <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1s">-->
-<!---->
-<!--              </div>-->
-
              <div class="clearfix col-md-12 col-sm-12">
                 <hr>
               </div>
 
-
               <?php include "validate.php"; ?>
 
-              <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="1s">
+              <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.8s">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" novalidate>
                   <div class="col-md-4 col-sm-4">
                     <input type="text" class="form-control" name="name" placeholder="Vardas" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''  ?>"  />
@@ -91,11 +82,7 @@
                     <span class="text-danger"><?php echo $phoneErr;?></span>
                   </div>
                   <div class="col-md-12 col-sm-12">
-                    <textarea   class="form-control"
-                                rows="4"
-                                name="comment"
-                                placeholder="Žinutės tekstas"
-                                value="<?php echo isset($_POST['name']) ? $_POST['name'] : ''  ?>"></textarea>
+                    <textarea  class="form-control" rows="4" name="comment" placeholder="Žinutės tekstas" value="<?php echo isset($_POST['comment']) ? $_POST['comment'] : ''  ?>"></textarea>
                   </div>
                   <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
                     <input type="submit" class="form-control" value="Išsiųsti">
@@ -113,9 +100,9 @@
 
 <!-- Footer section -->
 
-<?php
-    include "footer.php";
- ?>
+    <?php
+        include "footer.php";
+     ?>
 
 
      <!-- Back top -->

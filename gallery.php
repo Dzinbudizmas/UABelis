@@ -59,7 +59,7 @@
                <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="section-title">
                   <h1>Galerija</h1>
-                  <p>Mūsų paslaugų galerija</p>
+                  <p>Mūsų idėjų galerija</p>
                 </div>
               </div>
 
@@ -115,38 +115,6 @@
                 <div class="gallery-thumb">
                   <a href="images/gallery-img7.jpg" class="image-popup">
                     <img src="images/gallery-img7.jpg" class="img-responsive" alt="Galerija">
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="gallery-thumb">
-                  <a href="images/gallery-img8.jpg" class="image-popup">
-                    <img src="images/gallery-img8.jpg" class="img-responsive" alt="Galerija">
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="gallery-thumb">
-                  <a href="images/gallery-img9.jpg" class="image-popup">
-                    <img src="images/gallery-img9.jpg" class="img-responsive" alt="Galerija">
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="gallery-thumb">
-                  <a href="images/gallery-img10.jpg" class="image-popup">
-                    <img src="images/gallery-img10.jpg" class="img-responsive" alt="Galerija">
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="gallery-thumb">
-                  <a href="images/gallery-img11.jpg" class="image-popup">
-                    <img src="images/gallery-img11.jpg" class="img-responsive" alt="Galerija">
                   </a>
                 </div>
               </div>

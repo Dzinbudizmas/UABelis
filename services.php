@@ -73,7 +73,6 @@
                     <h3>Konsultacijos individualios</h3>
                   </div>
                   <p>Geras laikas</p>
-                 <!-- <button class="btn btn-default section-btn">Užsakyti</button> -->
                 </div>
               </div>
 
@@ -86,8 +85,7 @@
                     <h3>Konsultacijos verslui </h3>
                   </div>
                   <p>Talentų paieška</p>
-                  <!-- <button class="btn btn-default section-btn">Užsakyti</button> -->
-                </div>
+                 </div>
               </div>
 
               <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
@@ -99,8 +97,7 @@
                     <h3>Konsultacijos studentams</h3>
                   </div>
                   <p>Gyvenimo pamokos</p>
-                  <!-- <button class="btn btn-default section-btn">Užsakyti</button> -->
-                </div>
+                 </div>
               </div>
 
             </div>

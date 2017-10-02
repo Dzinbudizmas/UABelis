@@ -2,6 +2,8 @@
 require "header.php";
 ?>
 
+
+
     <body>
 
         <!-- Preloader section -->
@@ -29,7 +31,7 @@ require "header.php";
                         <li><a href="about.php">Apie mus</a></li>
                         <li><a href="gallery.php">Galerija</a></li>
                         <li><a href="services.php">Paslaugos</a></li>
-                        <li class="active"><a href="contact.php">Kontaktai</a></li>
+                        <li><a href="contact.php">Kontaktai</a></li>
                     </ul>
                 </div>
 
@@ -37,19 +39,13 @@ require "header.php";
         </div>
 
 
-        <!-- Contact section -->
+        <!-- Admin section -->
 
         <section id="contact">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="section-title text-center">
-                            <h1>Jūsų užklausa sėkmingai išsiųsta!</h1>
-                            <p>Mūsų komanda greitu laiku susisieks su jumis.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="container table-responsive">
+                <?php
+                include "query.php";
+                ?>
             </div>
         </section>
 
